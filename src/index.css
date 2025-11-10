@@ -8,7 +8,33 @@
   }
 
   body {
-    @apply bg-white text-primary antialiased;
+    @apply text-primary antialiased;
+    background: linear-gradient(135deg, #0f172a 0%, #3b82f6 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  @media (max-width: 640px) {
+    body {
+      background: linear-gradient(120deg, #0f172a 60%, #3b82f6 100%);
+    }
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 20% 40%, #3b82f6 0%, transparent 60%),
+      radial-gradient(circle at 80% 70%, #0f172a 0%, transparent 60%);
+    opacity: 0.5;
+    transition: opacity 0.2s;
   }
 }
 

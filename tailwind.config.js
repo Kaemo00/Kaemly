@@ -9,6 +9,12 @@ export default {
       colors: {
         primary: '#0F172A',
         secondary: '#3B82F6',
+        neonPink: '#FF2EF5',
+        neonBlue: '#00F0FF',
+        neonGreen: '#39FF14',
+        neonYellow: '#F5FF2E',
+        neonPurple: '#A259FF',
+        neonBg: 'linear-gradient(135deg, #0F172A 0%, #3B82F6 60%, #FF2EF5 100%)',
       },
       animation: {
         'fade-in': 'fadeIn 0.2s ease-in-out',

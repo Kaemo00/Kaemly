@@ -16,19 +16,21 @@ export const Home = () => {
       <main className="min-h-screen pt-16">
         <section className="container py-20 md:py-32 flex flex-col items-center text-center">
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-neonPink"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            style={{ textShadow: '0 0 16px #FF2EF5, 0 0 32px #00F0FF' }}
           >
             Développeur Web IA Junior
           </motion.h1>
 
           <motion.p
-            className="text-lg md:text-xl text-gray-600 max-w-2xl mb-12"
+            className="text-lg md:text-xl text-neonBlue max-w-2xl mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            style={{ textShadow: '0 0 8px #00F0FF' }}
           >
             Passionné par la création d'applications web modernes et intelligentes. Je combine
             développement frontend et intégration d'IA pour créer des expériences uniques.
@@ -40,7 +42,10 @@ export const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Link to="/projects" className="btn-primary">
+            <Link
+              to="/projects"
+              className="btn-primary bg-neonGreen text-primary hover:bg-neonPink"
+            >
               Voir mes projets
             </Link>
             <div className="flex items-center gap-4">
@@ -48,7 +53,7 @@ export const Home = () => {
                 href="https://github.com/Kaemo00"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-neonPurple hover:text-neonPink transition-colors"
               >
                 GitHub
               </a>
@@ -56,7 +61,7 @@ export const Home = () => {
                 href="https://www.linkedin.com/in/morisseaukaemly"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-neonPurple hover:text-neonPink transition-colors"
               >
                 LinkedIn
               </a>
