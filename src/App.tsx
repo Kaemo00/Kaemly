@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import SkipLink from './components/SkipLink';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
 import { ProjectDetail } from './pages/ProjectDetail';
@@ -10,7 +9,6 @@ import BriefsPage from './pages/Briefs';
 function App() {
   return (
     <div className="min-h-dvh bg-gradient-to-br from-[#133c86] to-[#1d4ed8] text-white">
-      <SkipLink />
       <Navbar />
       <main
         id="main-content"

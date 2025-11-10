@@ -47,11 +47,18 @@ src/
 
 ## 🚀 Déploiement
 
-### GitHub Pages
+### Déploiement sur GitHub Pages
 
-1. Dans `vite.config.ts`, vérifier que `base` pointe vers `/Kaemly/`
-2. Build le projet: `npm run build`
-3. Déployer: `npm run deploy:gh`
+1. Vérifiez que le champ `base` dans `vite.config.ts` est bien `/Kaemly/`.
+2. Build le projet :
+   ```bash
+   npm run build
+   ```
+3. Déployez sur GitHub Pages :
+   ```bash
+   npm run deploy
+   ```
+4. Le site sera disponible sur https://kaemo00.github.io/Kaemly/
 
 ### Vercel
 
